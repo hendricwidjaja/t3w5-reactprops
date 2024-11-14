@@ -1,4 +1,4 @@
-import { FoodCard } from "./FoodCard";
+import FoodCard from "./FoodCard";
 
 let foods = [
     'bokkeumbap',
@@ -13,7 +13,7 @@ let foods = [
     'laksa'
 ];
 
-function FoodList() {
+export default function FoodList() {
     return (
         <section>
             {
@@ -23,8 +23,4 @@ function FoodList() {
             }
         </section>
     )
-}
-
-export {
-    FoodList
 }

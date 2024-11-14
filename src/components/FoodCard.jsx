@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 
-function FoodCard(props) {
+export default function FoodCard(props) {
     const {foodName /* otherProp, anotherProp */} = props;
     return (
         <Card style={{ width: '18rem' }}>
@@ -13,8 +13,4 @@ function FoodCard(props) {
             </Card.Body>
         </Card>
     )
-}
-
-export {
-    FoodCard
 }
