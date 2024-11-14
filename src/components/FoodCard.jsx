@@ -1,5 +1,5 @@
 function FoodCard(props) {
-    const {foodName, /* otherProp, anotherProp */} = props;
+    const {foodName /* otherProp, anotherProp */} = props;
     return (
         <div>
             <h3>{foodName}</h3>
