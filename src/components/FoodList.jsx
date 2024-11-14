@@ -1,3 +1,5 @@
+import { FoodCard } from "./FoodCard";
+
 let foods = [
     'bokkeumbap',
     'ramen',
@@ -14,13 +16,11 @@ let foods = [
 function FoodList() {
     return (
         <section>
-            <ul>
-                {
-                    foods.map(food => {
-                        return <li>{food}</li>
-                    })
-                }
-            </ul>
+            {
+                foods.map(food => {
+                    return <p><FoodCard foodName={food}/></p>
+                })
+            }
         </section>
     )
 }
